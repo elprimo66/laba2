@@ -1,0 +1,140 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int season;
+	cout << " Введите значение: ";
+	cin >> season;
+
+	if (season == 1)
+	{
+		cout << "\x1b[92mСейчас ЛЕТО, Одеваемся по легче!" << "\x1b[0m";
+	}
+	else if (season == 2) {
+		cout << "\x1b[93mСейчас ОСЕНЬ, Одеваемся по теплее, не забываем зонт!" << "\x1b[0m";
+	}
+	else if (season == 3) {
+		cout << "\x1b[94mСейчас ЗИМА, Одеваем всё, что есть. зонт уже не нужен!" << "\x1b[0m";
+	}
+	else if (season == 4) {
+		cout << "\x1b[94mСейчас Весна, Одеваемся по теплее, не забываем зонт!" << "\x1b[0m";
+	}
+	else {
+		cout << "Такого времени нету";
+	}
+
+
+	int _; cin >> _;
+	return 0;
+}
+
+/*
+void fun() {
+	
+	setlocale(0,"");
+
+
+	int a_1 = 1;
+	std::cout << "a_1 = " << a_1 << " | тип: int, размер: 4 б." << std::endl;
+	int a_2 = 11;
+	std::cout << "a_2 = " << a_2 << " | тип: int, размер: 4 б." << std::endl;
+	int a_3 = 111;
+	std::cout << "a_3 = " << a_3 << " | тип: int, размер: 4 б." << std::endl;
+	int a_4 = 1111;
+	std::cout << "a_4 = " << a_4 << " | тип: int, размер: 4 б." << std::endl;
+	int a_5 = 11111;
+	std::cout << "a_5 = " << a_5 << " | тип: int, размер: 4 б." << std::endl;
+
+	short s_1 = 1;
+	std:: cout << "s_1 = " << s_1 << " | тип: short, размер: 2 б." << std::endl;
+	short s_2 = 2;
+	std::cout << "s_2 = " << s_2 << " | тип: short, размер: 2 б." << std::endl;
+	short s_3 = 3;
+	std::cout << "s_3 = " << s_3 << " | тип: short, размер: 2 б." << std::endl;
+	short s_4 = 4;
+	std::cout << "s_4 = " << s_4 << " | тип: short, размер: 2 б." << std::endl;
+	short s_5 = 5;
+	std::cout << "s_5 = " << s_5 << " | тип: short, размер: 2 б." << std::endl;
+
+	long b_1 = 2;
+	std::cout << "b_1 = " << b_1 << " | тип: long, размер: 4 б." << std::endl;
+	long b_2 = 6;
+	std::cout << "b_2 = " << b_2 << " | тип: long, размер: 4 б." << std::endl;
+	long b_3 = 7;
+	std::cout << "b_3 = " << b_3 << " | тип: long, размер: 4 б." << std::endl;
+	long b_4 = 8;
+	std::cout << "b_4 = " << b_4 << " | тип: long, размер: 4 б." << std::endl;
+	long b_5 = 1;
+	std::cout << "b_5 = " << b_5 << " | тип: long, размер: 4 б." << std::endl;
+
+	float c_1 = 1.2;
+	std::cout << "c_1 = " << c_1 << " | тип: float, размер: 4 б." << std::endl;
+	float c_2 = 1.3;
+	std::cout << "c_2 = " << c_2 << " | тип: float, размер: 4 б." << std::endl;
+	float c_3 = 1.4;
+	std::cout << "c_3 = " << c_3 << " | тип: float, размер: 4 б." << std::endl;
+	float c_4 = 1.5;
+	std::cout << "c_4 = " << c_4 << " | тип: float, размер: 4 б." << std::endl;
+	float c_5 = 1.6;
+	std::cout << "c_5 = " << c_5 << " | тип: float, размер: 4 б." << std::endl;
+
+	double d1 = 9.0;
+	std::cout << "d1 = " << d1 << " | тип: double, размер: 8 б." << std::endl;
+	double d2 = 9.0;
+	std::cout << "d2 = " << d2 << " | тип: double, размер: 8 б." << std::endl;
+	double d3 = 9.0;
+	std::cout << "d3 = " << d3 << " | тип: double, размер: 8 б." << std::endl;
+	double d4 = 9.0;
+	std::cout << "d4 = " << d4 << " | тип: double, размер: 8 б." << std::endl;
+	double d5 = 9.0;
+	std::cout << "d5 = " << d5 << " | тип: double, размер: 8 б." << std::endl;
+
+	char ch1 = 'c';
+	std::cout << "ch1 = " << ch1 << " | тип: char, размер: 1 б." << std::endl;
+	char ch2 = ',';
+	std::cout << "ch2 = " << ch2 << " | тип: char, размер: 1 б." << std::endl;
+	char ch3 = 'n';
+	std::cout << "ch3 = " << ch3 << " | тип: char, размер: 1 б." << std::endl;
+	char ch4 = 'v';
+	std::cout << "ch4 = " << ch4 << " | тип: char, размер: 1 б." << std::endl;
+	char ch5 = 'v';
+	std::cout << "ch5 = " << ch5 << " | тип: char, размер: 1 б." << std::endl;
+
+	bool z1 = 1;
+	std::cout << "z1 = " << z1 << " | тип: bool, размер: 1 б." << std::endl;
+	bool z2 = 0;
+	std::cout << "z2 = " << z2 << " | тип: bool, размер: 1 б." << std::endl;
+	bool z3 = true;
+	std::cout << "z3 = " << z3 << " | тип: bool, размер: 1 б." << std::endl;
+	bool z4 = false; 
+	std::cout << "z4 = " << z4 << " | тип: bool, размер: 1 б." << std::endl;
+	bool z5 = 1;
+	std::cout << "z5 = " << z5 << " | тип: bool, размер: 1 б." << std::endl;
+
+	std::string str2 = "Hello!";
+	std::cout << "str2 = " << str2 << " | тип: string, размер: 1 - 00б." << std::endl;
+	std::string str3 = "Hello!";
+	std::cout << "str3 = " << str3 << " | тип: string, размер: 1 - 00б." << std::endl;
+	std::string str4 = "Hello!";
+	std::cout << "str4 = " << str4 << " | тип: string, размер: 1 - 00б." << std::endl;
+	std::string str5 = "Hello!";
+	std::cout << "str5 = " << str5 << " | тип: string, размер: 1 - 00б." << std::endl;
+	std::string str6 = "Hello!";
+	std::cout << "str6 = " << str6 << " | тип: string, размер: 1 - 00б." << std::endl;
+
+
+
+
+
+
+
+
+
+}
+*/
